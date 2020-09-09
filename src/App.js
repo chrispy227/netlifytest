@@ -3,6 +3,8 @@ import "./App.css";
 // Import Components
 import Nav from "./components/Nav";
 import Tweets from "./components/Tweets";
+import Nav2 from "./components/Nav2";
+import Video from "./components/Video";
 
 function App() {
 	// Write Javascript Here
@@ -22,6 +24,8 @@ function App() {
 	return (
 		<div className="App">
 			<div className="home">
+				<Nav2 toggle={toggle} />
+				<Video nr={counter} setToggle={toggler} />
 				<h1 className={toggle ? "active" : ""}>Hello React World</h1>
 				<h2>Counter {counter}</h2>
 				<button onClick={incrementor}>Click</button>
